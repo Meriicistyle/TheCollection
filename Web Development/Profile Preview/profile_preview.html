@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Profile Previewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+<!-- <script type="text/javascript" src="profile_preview.js"></script> -->
+  <style src="profile_preview.css"></style>
+</head>
+
+<body>
+  <noscript>Please enable JavaScript to go further.</noscript>
+  <h1><u>Profile Previewer</u></h1>
+
+  <script>
+    function printing(){
+      document.getElementById("namer").innerHTML = document.getElementById('name').value
+      document.getElementById("surnamer").innerHTML = document.getElementById('surname').value;
+      document.getElementById("ager").innerHTML = document.getElementById('age').value;
+      document.getElementById("grader").innerHTML = document.getElementById('grade').value;
+      document.getElementById("fatherr").innerHTML = document.getElementById('father').value;
+      document.getElementById("motherr").innerHTML = document.getElementById('mother').value;
+    };
+  </script>
+
+  <form action="PayslipServlet" method="get">
+    <table>
+      <tr>
+        <td>Name:  </td><td><input type='text' id="name"></td><br>
+      </tr>
+      <tr>
+        <td>Surname:  </td><td><input type='text' id="surname"></td><br>
+      </tr>
+      <tr>
+        <td>Age:  </td><td><input type='text' id="age"></td><br>
+      </tr>
+      <tr>
+        <td>Grade:  </td><td><input type='text' id="grade"></td><br>
+      </tr>
+      <tr>
+        <td>Father (Name):  </td><td><input type='text' id="father"></td><br>
+      </tr>
+      <tr>
+        <td>Mother(Name):  </td><td><input type='text' id="mother"></td><br>
+      </tr>
+      <tr>
+        <td><h3><i>Profile: </i></h3></td>
+      </tr>
+      <tr>
+        <td><span id="namer"></span></td>
+      </tr>
+      <tr>
+        <td><span id="surnamer"></span></td>
+      </tr>
+      <tr>
+        <td><span id="ager"></span></td>
+      </tr>
+      <tr>
+        <td><span id="grader"></span></td>
+      </tr>
+      <tr>
+        <td><span id="fatherr"></span></td>
+      </tr>
+      <tr>
+        <td><span id="motherr"></span></td>
+      </tr>
+      <tr>
+        <input type="button" value="Submit" onClick="printing()">
+      </tr>
+    </table>
+  </form>
+  <br>
+
+
+  </body>
+</html>

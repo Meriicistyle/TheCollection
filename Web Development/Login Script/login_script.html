@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Script</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+<!-- <script type="text/javascript" src="login_script.js"></script> -->
+<!-- <style src="login_script.css"></style> -->
+<style type="text/css">
+  body {
+    background-color: yellow
+  }
+</style>
+</head>
+<body>
+  <noscript>Please enable JavaScript to go further.</noscript>
+  <h2 id="">
+  <h2 id='top'></h2>
+  <table>
+    <tr>
+      <td id='namer'>Name:  </td><td><input type='text' id="name"></td><br>
+    </tr>
+    <tr>
+      <td id='surnamer'>Surname:  </td><td><input type='text' id="surname"></td><br>
+    </tr>
+    <tr>
+      <td id='emailr'>E-Mail:  </td><td><input type='text' id="email"></td><br>
+    </tr>
+    <tr>
+      <td id='usernamer'>Username:  </td><td><input type='text' id="username"></td><br>
+    </tr>
+    <tr>
+      <td id='birthr'>Date of Birth:  </td><td><input type='date' id="birth"></td><br>
+    </tr>
+    <tr>
+      <td id='countryr'>Country:  </td><td><input type='text' id="country"></td><br>
+    </tr>
+    <tr>
+      <td id='passwordr'>Password:  </td><td><input type='password' id="password"></td><br>
+    </tr>
+    <tr>
+      <td id='password2r'>Confirm Password:  </td><td><input type='password' id="password2"></td><br>
+    </tr>
+    <tr>
+      <th id="masterbuttonth"><input id="masterbutton" type="button" value="Create Account" onClick="Validate()"></th>
+    </tr>
+    <tr>
+      <th><input id="loginbutton" type="button" value="Log In" onClick="loginscript()"></th>
+    </tr>
+    <tr>
+      <th><input id="refreshbutton" type="button" value="Home Screen" onClick="location.reload();"></th>
+    </tr>
+  </table>
+
+  <script>
+    document.getElementById("loginbutton").style.visibility = "hidden";
+    document.getElementById("top").innerHTML = "Create an Account";
+    document.getElementById("refreshbutton").style.visibility = "hidden";
+
+    function Validate() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("password2").value;
+            if (password != confirmPassword) {
+                alert("Your first password is not the same as the second one.");
+                return false;
+            }
+
+            function checkReqFields(){
+        				var returnValue;
+        				var name=document.getElementById("name").value;
+        				var surname=document.getElementById("surname").value;
+                var email=document.getElementById("email").value;
+                var username=document.getElementById("username").value;
+                var birth=document.getElementById("birth").value;
+                var country=document.getElementById("country").value;
+                var password=document.getElementById("password").value;
+                var password2=document.getElementById("password2").value;
+
+        				returnValue=true;
+        				if(name.trim()==""){
+        					document.getElementById("name").innerHTML="* Name is required.";
+        					returnValue=false;
+        				}
+        				if(address.trim()==""){
+        					document.getElementById("surname").innerHTML="* Surname is required.";
+        					returnValue=false;
+        				}
+                if(address.trim()==""){
+        					document.getElementById("email").innerHTML="* E-Mail is required.";
+        					returnValue=false;
+        				}
+                if(address.trim()==""){
+        					document.getElementById("username").innerHTML="* Username is required.";
+        					returnValue=false;
+        				}
+                if(address.trim()==""){
+        					document.getElementById("birth").innerHTML="* Birth Date is required.";
+        					returnValue=false;
+        				}
+                if(address.trim()==""){
+        					document.getElementById("country").innerHTML="* Country is required.";
+        					returnValue=false;
+        				}
+                if(address.trim()==""){
+        					document.getElementById("password").innerHTML="* Password is required.";
+        					returnValue=false;
+        				}
+                if(address.trim()==""){
+        					document.getElementById("password2").innerHTML="* Password Confirmation is required.";
+        					returnValue=false;
+        				}
+        				return returnValue;
+        			}
+            document.getElementById("top").innerHTML = "Create an Account";
+            document.getElementById("name").style.display = "none";
+            document.getElementById("surname").style.display = "none";
+            document.getElementById("email").style.display = "none";
+            document.getElementById("birth").style.display = "none";
+            document.getElementById("country").style.display = "none";
+            document.getElementById("namer").style.display = "none";
+            document.getElementById("surnamer").style.display = "none";
+            document.getElementById("emailr").style.display = "none";
+            document.getElementById("birthr").style.display = "none";
+            document.getElementById("countryr").style.display = "none";
+            document.getElementById("top").innerHTML = "Log In";
+            document.getElementById("password2").style.display = "none";
+            document.getElementById("password2r").style.display = "none";
+            document.getElementById("masterbutton").style.display = "none";
+            document.getElementById("masterbuttonth").style.display = "none";
+            document.getElementById("loginbutton").style.visibility = "visible";
+        }
+
+
+
+
+    function loginscript(){
+      document.getElementById("top").innerHTML = "SUCCESSFULLY LOGGED IN!";
+      document.getElementById("username").style.display = "none";
+      document.getElementById("usernamer").style.display = "none";
+      document.getElementById("password").style.display = "none";
+      document.getElementById("passwordr").style.display = "none";
+      document.getElementById("refreshbutton").style.display = "visible";
+      document.getElementById("loginbutton").style.display = "none";
+    };
+
+
+  </script>
+
+
+
+</body>
+</html>

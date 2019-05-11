@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+<!-- <script type="text/javascript" src="testing.js"></script> -->
+  <style src="testing.css"></style>
+
+</head>
+<body>
+  <h1>Calculator</h1><br>
+  <noscript>Please enable JavaScript to go further.</noscript>
+
+  Number 1: <input type='number' id='n1'><br>
+  <br>
+  Number 2: <input type='number' id='n2'><br>
+  <br>
+
+
+  <button type="button" onclick="summary()" id='buttons'>Summary</button>
+  <button type="button" onclick="subtraction()" id='buttons'>Subtract</button>
+  <button type="button" onclick="multiply()" id='buttons'>Multiply</button>
+  <button type="button" onclick="divide()" id='buttons'>Divide</button>
+
+<p id="result"></p>
+
+<script>
+function summary(){
+  var number1 = parseInt(document.getElementById("n1").value);
+  var number2 = parseInt(document.getElementById("n2").value);
+  document.getElementById("result").innerHTML = number1 + number2;
+};
+
+function subtraction(){
+  var number1 = parseInt(document.getElementById("n1").value);
+  var number2 = parseInt(document.getElementById("n2").value);
+  document.getElementById("result").innerHTML = number1 - number2;
+};
+
+function multiply(){
+  var number1 = parseInt(document.getElementById("n1").value);
+  var number2 = parseInt(document.getElementById("n2").value);
+  document.getElementById("result").innerHTML = number1 * number2;
+};
+
+function divide(){
+  var number1 = parseInt(document.getElementById("n1").value);
+  var number2 = parseInt(document.getElementById("n2").value);
+  document.getElementById("result").innerHTML = number1 / number2;
+};
+</script>
+
+
+</body>
+</html>
