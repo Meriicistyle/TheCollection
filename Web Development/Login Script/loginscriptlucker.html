@@ -10,6 +10,9 @@
   body {
     background-color: yellow
   }
+  select {
+        width:173px;
+  }
 </style>
 </head>
 <body>
@@ -30,10 +33,11 @@
       <td id='usernamer'>Username:  </td><td><input type='text' id="username" required=required></td><br>
     </tr>
     <tr>
-      <td id='birthr'>Date of Birth:  </td><td><input type='date' id="birth" required=required></td><br>
+      <td id='birthr'>Date of Birth:  </td><td><input type='date' id="birth" style="width:168px;" required=required></td><br>
     </tr>
     <tr>
       <td id='countryr'>Country:  </td><td><select>
+                                             <option value="00"></option>
                                              <option value="AF">Afghanistan</option>
                                              <option value="AX">Åland Islands</option>
                                            	 <option value="AL">Albania</option>
@@ -274,8 +278,8 @@
                                            	 <option value="UY">Uruguay</option>
                                            	 <option value="UZ">Uzbekistan</option>
                                            	 <option value="VU">Vanuatu</option>
-                                           	 <option value="VE">Venezuela, Bolivarian Republic of</option>
-                                           	 <option value="VN">Viet Nam</option>
+                                           	 <option value="VE">Venezuela</option>
+                                           	 <option value="VN">Vietnam</option>
                                            	 <option value="VG">Virgin Islands, British</option>
                                            	 <option value="VI">Virgin Islands, U.S.</option>
                                            	 <option value="WF">Wallis and Futuna</option>
@@ -283,9 +287,7 @@
                                            	 <option value="YE">Yemen</option>
                                            	 <option value="ZM">Zambia</option>
                                              <option value="ZW">Zimbabwe</option>
-                                           </select>
-
-
+                                           </select></td><br>
     </tr>
     <tr>
       <td id='passwordr'>Password:  </td><td><input type='password' id="password" required=required></td><br>
