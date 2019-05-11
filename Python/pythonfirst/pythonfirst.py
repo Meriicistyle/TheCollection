@@ -11,7 +11,7 @@ ANNEN EVDE Mİ?!?: """)
     if (mumz == 'evde' or 'EVDE' or 'Evde'):
         print("""
 HAYIR OLAMAZ YARRAM, YANIMDA!!""")
-elif (mumz == 'evde değil' or 'değil' or 'degil' or 'Degil' or 'Değil' or 'evde degil' or 'EVDE DEĞİL' or 'Evde Değil'):
+elif (mumz == 'evde değil' or 'değil' or 'degil' or 'Degil' or 'Değil' or 'evde degil' or 'EVDE DEĞİL' or 'Evde Değil' or 'hayır' or 'HAYIR' or 'hayir' or 'Hayir'):
         print("""
 DEĞİL ÇÜNKÜ YANIMDA!""")
 elif wanted == 'dick':
@@ -20,7 +20,7 @@ ANNEN EVDE Mİ?!?: """)
     if (mumz == 'evde' or 'EVDE' or 'Evde'):
         print("""
 HAYIR OLAMAZ YARRAM, YANIMDA!""")
-    elif (mumz == 'evde değil' or 'değil' or 'degil' or 'Degil' or 'Değil'):
+    elif (mumz == 'evde değil' or 'değil' or 'degil' or 'Degil' or 'Değil' or 'evde degil' or 'EVDE DEĞİL' or 'Evde Değil' or 'hayır' or 'HAYIR' or 'hayir' or 'Hayir'):
         print("""
 DEĞİL ÇÜNKÜ YANIMDA!""")
 else:
