@@ -13,31 +13,34 @@
   select {
         width:173px;
   }
+  .textes {
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
 </style>
 </head>
 <body>
   <noscript>Please enable JavaScript to go further.</noscript>
   <h2 id="">
-  <h1 id='top' style="text-align:center;"></h1>
+  <h1 id='top' style="text-align:center;font-family: Copperplate,Copperplate Gothic Light,fantasy;" ></h1>
   <table style="margin: 0px auto;">
     <tr>
-      <td id='namer'>Name:  </td><td><input type='text' id="name"></td><br>
+      <td id='namer' class='textes'>Name:    </td><td><input type='text' id="name"></td><br>
     </tr>
     <tr>
-      <td id='surnamer'>Surname:  </td><td><input type='text' id="surname"></td><br>
+      <td id='surnamer' class='textes'>Surname:    </td><td><input type='text' id="surname"></td><br>
     </tr>
     <tr>
-      <td id='emailr'>E-Mail:  </td><td><input type='email' id="email"></td><br>
+      <td id='emailr' class='textes'>E-Mail:    </td><td><input type='email' id="email"></td><br>
     </tr>
     <tr>
-      <td id='usernamer'>Username:  </td><td><input type='text' id="username"></td><br>
+      <td id='usernamer' class='textes'>Username:    </td><td><input type='text' id="username"></td><br>
     </tr>
     <tr>
-      <td id='birthr'>Date of Birth:  </td><td><input type='date' id="birth" style="width:168px;"></td><br>
+      <td id='birthr' class='textes'>Date of Birth:    </td><td><input type='date' id="birth" style="width:168px;"></td><br>
     </tr>
     <tr>
-      <td id='countryr'>Country:  </td><td><select>
-                                             <option value="00"></option>
+      <td id='countryr' class='textes'>Country:    </td><td><select>
+                                             <option value="00">Select a Country</option>
                                              <option value="AF">Afghanistan</option>
                                              <option value="AX">Åland Islands</option>
                                            	 <option value="AL">Albania</option>
@@ -290,10 +293,10 @@
                                            </select></td><br>
     </tr>
     <tr>
-      <td id='passwordr'>Password:  </td><td><input type='password' id="password"></td><br>
+      <td id='passwordr' class='textes'>Password:    </td><td><input type='password' id="password"></td><br>
     </tr>
     <tr>
-      <td id='password2r'>Confirm Password:  </td><td><input type='password' id="password2"></td><br>
+      <td id='password2r' class='textes'>Confirm Password:    </td><td><input type='password' id="password2"></td><br>
     </tr>
     <tr>
       <th id="masterbuttonth"><input id="masterbutton" type="button" value="Create Account" onClick="Validate()"></th>
@@ -311,7 +314,7 @@
     document.getElementById("top").innerHTML = "Create an Account";
     document.getElementById("refreshbutton").style.visibility = "hidden";
 
-    function Validate() {
+    function Validate(){
             var password = document.getElementById("password").value;
             var confirmPassword = document.getElementById("password2").value;
             if (password != confirmPassword) {
