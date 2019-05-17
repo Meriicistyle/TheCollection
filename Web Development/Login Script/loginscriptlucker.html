@@ -6,22 +6,22 @@
   <meta charset="utf-8">
 <!-- <script type="text/javascript" src="login_script.js"></script> -->
 <!-- <style src="login_script.css"></style> -->
+<noscript>Please enable JavaScript to go further.</noscript>
 <style type="text/css">
   body {
-    background-color: yellow;
+    background-color: #ea80fc;
   }
   select {
         width:173px;
   }
   .textes {
 	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  text-shadow: 0 0px 0px rgba(0,0,0);
 }
 </style>
 </head>
 <body>
-  <noscript>Please enable JavaScript to go further.</noscript>
-  <h2 id="">
-  <h1 id='top' style="text-align:center;font-family: Copperplate,Copperplate Gothic Light,fantasy;" ></h1>
+  <h1 id='top' style="text-align:center;font-family: Copperplate,Copperplate Gothic Light,fantasy;text-shadow: 0 2px 2px rgba(0,0,0);" ></h1>
   <table style="margin: 0px auto;">
     <tr>
       <td id='namer' class='textes'>Name:    </td><td><input type='text' id="name"></td><br>
@@ -39,7 +39,7 @@
       <td id='birthr' class='textes'>Date of Birth:    </td><td><input type='date' id="birth" style="width:168px;"></td><br>
     </tr>
     <tr>
-      <td id='countryr' class='textes'>Country:    </td><td><select>
+      <td id='countryr' class='textes'>Country:    </td><td id='list'><select>
                                              <option value="00">Select a Country</option>
                                              <option value="AF">Afghanistan</option>
                                              <option value="AX">Åland Islands</option>
