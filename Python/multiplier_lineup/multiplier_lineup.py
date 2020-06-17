@@ -1,6 +1,6 @@
 while True:
 
-    num = int(input("Please choose a number to divide: "))
+    num = int(input("Show multipliers of this number: "))
 
     listRange = list(range(1,num+1))
 
