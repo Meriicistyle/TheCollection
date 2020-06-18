@@ -1,31 +1,31 @@
-import random
 import sys
+import random
 import math
+
 
 while True:
     print("""        
         --> Welcome to the Fibonacci
-            number tester. To get
-            started simply enter a number
-            and learn is it's a Fibonacci
-            number.
+            number tester. Simply
+            enter your number to learn
+            if it is a Fibonacci number.
         """)
+    fibo = int(input("Number: "))
+    fibostring = str(fibo)
+    fiboup = 5*fibo*fibo+4
+    fibodown = 5*fibo*fibo-4
 
-    numbertocheck = int(input("Number: "))
+    def isPerfectSquare(x): 
+        sr = math.sqrt(x)  
+        return ((sr - math.floor(sr)) == 0)
 
-    squareroot1 = 5*numbertocheck*numbertocheck + 4
-    squareroot2 = 5*numbertocheck*numbertocheck - 4
-
-    result1 = math.sqrt(squareroot1)
-    result2 = math.sqrt(squareroot2)
-
-    if ((result1 == int) | (result2 == int)):
-        print("""
-        Your number is a Fibonacci number!
-        ----------------------------------""")
+    if (isPerfectSquare(fiboup)) or (isPerfectSquare(fibodown)):
+        print("")
+        print(fibostring + """ IS a Fibonacci number.
+-----------------------------""")
         continue
     else:
-        print("""
-        Your number is no Fibonacci number.
-        -----------------------------------""")
+        print("")
+        print(fibostring + """ is NOT a Fibonacci number.
+-----------------------------""")
         continue
