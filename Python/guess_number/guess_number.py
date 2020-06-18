@@ -16,8 +16,7 @@ while True:
     num = int(input("Number: "))
 
     if (num==randomnum):
-        print("You found the number!")
-        sys.exit()
+        sys.exit("You found the number!")
     elif (num>randomnum):
         print("Lower! Try again.")
         continue
