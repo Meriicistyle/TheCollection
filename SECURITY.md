@@ -10,5 +10,5 @@ Basically all versions after I get to know the errors.
 
 ## Reporting a Vulnerability
 
-I will take care if you report the error and what's causing it
+I will take care if you report the error and what's causing it.
 This is probably the best explanation.
