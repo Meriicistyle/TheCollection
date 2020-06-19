@@ -2,7 +2,6 @@ import sys
 import random
 import math
 
-
 while True:
     print("""        
         --> Welcome to the Fibonacci

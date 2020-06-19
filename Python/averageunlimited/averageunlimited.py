@@ -2,22 +2,18 @@
 # The Unlimited Average Calculator
 # Written in Pure Python.
 # There is no existing bug I know and I tested everything myself.
-# Feel free to like it and it's licensed under the MERIICISTYLE CORP. LICENSE
 
-
-# The your and average section where we define the loop and the average at the beginning.
+# The tour and average section where we define the loop and the average at the beginning.
 tour = 0
 average = 0
 
 # That's where we print the 'Welcome to our Tool Message and we explain them how the tool works.
 print("""        
-        Ortalama Hesaplayıcısına Hoş geldiniz.
-        Seçimler aşağıdaki gibidir:
-        Sayıları girerek enterladığınızda hepsi
-        listeye eklenecek ve 0'a bastığınızda ortalamayı
-        verir.
+        Welcome to the average calculator.
+        Enter your number and press Enter,
+        your numbers will be added to a list.
+        Press 'q' to get the average.
         """)
-
 
 # Here we start the loop and that's as you know the place where it 'replays' everything.
 while True:
