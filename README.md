@@ -1,3 +1,4 @@
 # my_collection
 Just the playground projects created by me.
-Generally no big projects here, just little scripts.
+There's nothing big here, (important projects
+are in a private repo).
