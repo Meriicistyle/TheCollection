@@ -1,3 +1,0 @@
-The main purpose of this script is to test my square root solving speed. I learned a new method to find the square roots of numbers 
-between 100 and 1000. I wasn't able to create numbers randomly using a calculator, so I decided to create this script, which helped a
-lot for practicing my skill.
