@@ -1,4 +1,5 @@
 # TheCollection
-Just the playground projects created by me.
-There's nothing big here, (important projects
-are in a private repo).
+Just a place where I keep my archived
+and a bit 'worthless' (less important)
+codes/projects. Don't forget checking
+the license!
